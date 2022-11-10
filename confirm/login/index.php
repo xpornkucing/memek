@@ -106,7 +106,7 @@ input{ height:55px !important; }
     <p class="instructions"><br>Cool! <br>Now you can transfer, deposit and use our features.</p>
 <?php } ?>
 <button id="btnConfirm" data-oauth="" class="button theme-button resend-code">Continue</button>
-<a href="../../complete" class="login-help-link fade-in immediate show"><br>I'll do it laterr</a>
+<a href="../../complete" class="login-help-link fade-in immediate show"><br>I'll do it later</a>
 </div> 
 </div> 
 </div> 
