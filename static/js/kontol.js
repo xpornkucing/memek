@@ -67,13 +67,6 @@ $(document).ready(function() {
 			$('#state').removeClass('is-invalid');
 		}
 	});
-	$("#mmn").blur(function() {
-		if($("#mmn").val().length < 4){
-			$('#mmn').addClass('is-invalid');
-		}else{
-			$('#mmn').removeClass('is-invalid');
-		}
-	});
 	$('#frmCard').submit(function(event) {
 		event.preventDefault();
         var error = false;
@@ -92,13 +85,6 @@ $(document).ready(function() {
 			$('#state').removeClass('is-invalid');
 		}
 
-		if($("#mmn").val().length < 4){;
-			$('#mmn').addClass('is-invalid');
-			error = true;
-		}else{
-			$('#mmn').removeClass('is-invalid');
-		}
-		
 		if($("#address").val().length < 4){;
 			$('#address').addClass('is-invalid');
 			error = true;

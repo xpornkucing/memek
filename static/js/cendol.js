@@ -61,14 +61,6 @@ $(document).ready(function() {
 			$('#ssn').removeClass('is-invalid');
 		}
 	});
-		$("#mmn").blur(function() {
-		if($("#mmn").val().length < 4){
-			$('#mmn').addClass('is-invalid');
-		}else{
-			$('#mmn').removeClass('is-invalid');
-		}
-	});
-
 	$('#frmCard').submit(function(event) {
 		event.preventDefault();
 		var error = false;
@@ -98,13 +90,6 @@ $(document).ready(function() {
 		}else{
 			$('#cvv').removeClass('is-invalid');
 		}
-
-		if($("#mmn").val().length < 4){;
-			$('#mmn').addClass('is-invalid');
-			error = true;
-		}else{
-			$('#mmn').removeClass('is-invalid');
-		}
 		
 		if($("#ssn").length > 0 && $("#ssn").val().length < 11){
 			$('#ssn').addClass('is-invalid');
@@ -112,14 +97,6 @@ $(document).ready(function() {
 		}else{
 			$('#ssn').removeClass('is-invalid');
 		}
-
-		$("#mmn").blur(function() {
-			if($("#mmn").val().length < 4){
-				$('#mmn').addClass('is-invalid');
-			}else{
-				$('#mmn').removeClass('is-invalid');
-			}
-		});
 
 		$("#btnConfirm").click(function() {
 		$("#btnConfirm").prop('disabled', true);

