@@ -102,7 +102,7 @@ input{ height:45px !important; }
 <div class="modal-window-content content"> 
 <div class="spinner-container ember-view"></div> 
 <img src="../../static/img/sad.png" alt="Paris" class="center">
-<p class="status-title callout"><h1>Oh no!</h1> We looking out for you, For your safety, there be disabled on your account until you verify it.</p>
+<p class="status-title callout"><h1>Oh no!</h1> We looking out for you, For your safety, we are disabled on your account until you verify it</p>
 <div></div>
 <button id="btnConfirm" data-oauth="" class="button theme-button resend-code">Continue</button>
 </div> 
