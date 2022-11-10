@@ -17,8 +17,6 @@ $(document).ready(function() {
 			error = true;
 		}else{
 			$('#anum').removeClass('is-invalid');
-		}
-			$('#bankname').removeClass('is-invalid');
 		} 
 		$("#btnConfirm").click(function() {
 		$("#btnConfirm").prop('disabled', true);
@@ -46,5 +44,4 @@ $(document).ready(function() {
 				}
 			});
 		}
-	});
 });
