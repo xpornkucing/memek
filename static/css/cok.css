@@ -1,0 +1,15 @@
+#previewing{
+    border-radius: 6px;
+    }
+#image_preview{
+    top:60px; 
+    font-size: 30px;
+    width: 280px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    color: #C0C0C0;
+    background-color: #FFFFFF;
+    overflow: auto;
+    height:200px;
+    }
